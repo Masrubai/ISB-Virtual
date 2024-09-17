@@ -1,6 +1,6 @@
 #!/bin/bash
 sudo apt update
-sudo apt install docker.io
+sudo apt install docker.io -y
 mkdir repocket
 cd repocket
 
@@ -9,7 +9,7 @@ pid=$!
 
 log_file="pull.log"
 
-# Tunggu hingga proses selesai atau timeout setelah 5 menit
+# Tunggu hingga proses selesai atau timeout setelah 2 menit
 timeout 120s wait $pid > $log_file 2>&1
 
 if [ $? -eq 0 ]; then
