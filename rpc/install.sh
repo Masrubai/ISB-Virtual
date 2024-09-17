@@ -5,6 +5,8 @@ mkdir repocket
 cd repocket
 
 docker pull repocket/repocket:latest &
+pid=$!
+
 # Tunggu hingga proses dengan PID $pid selesai
 wait $pid
 
