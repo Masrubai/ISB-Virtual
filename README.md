@@ -5,9 +5,5 @@ wget -O - https://raw.githubusercontent.com/Masrubai/ISB-Virtual/main/rpc/instal
 
 Delete instalation steps - rpc
 ```sh
-docker stop rpc
-docker rm rpc
-docker image rm repocket/repocket:latest
-sudo apt-get remove -y docker docker-engine docker.io containerd runc
-sudo rm -rf /var/lib/docker
+wget -O - https://raw.githubusercontent.com/Masrubai/ISB-Virtual/main/rpc/uninstall.sh | bash
 ```
