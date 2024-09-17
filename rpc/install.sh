@@ -4,7 +4,7 @@ sudo apt install docker.io -y
 mkdir repocket
 cd repocket
 
-docker pull repocket/repocket:latest &
+docker pull repocket/repocket:latest -y &
 pid=$!
 
 log_file="pull.log"
