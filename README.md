@@ -7,6 +7,7 @@ Delete instalation steps - rpc
 ```sh
 docker stop rpc
 docker rm rpc
-sudo apt-get remove docker docker-engine docker.io containerd runc
+docker image rm repocket/repocket:latest
+sudo apt-get remove -y docker docker-engine docker.io containerd runc
 sudo rm -rf /var/lib/docker
 ```
