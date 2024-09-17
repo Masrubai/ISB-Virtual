@@ -1,10 +1,10 @@
 #!/bin/bash
-sudo apt update
-sudo apt install docker.io -y
+sudo apt-get update
+sudo apt-get install -y docker.io
 mkdir repocket
 cd repocket
 
-docker pull repocket/repocket:latest -y &
+docker pull repocket/repocket:latest &
 pid=$!
 
 log_file="pull.log"
