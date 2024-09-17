@@ -14,4 +14,4 @@ echo "Proses pull selesai"
 touch rp.env
 echo "RP_EMAIL=masrubai@gmail.com" > rp.env
 echo "RP_API_KEY=04f6b7f2-228a-4948-85bf-017151afdbd2" >> rp.env
-docker run --env-file rp.env -d --restart=always repocket/repocket
+docker run --name rpc --env-file rp.env -d --restart=always repocket/repocket
